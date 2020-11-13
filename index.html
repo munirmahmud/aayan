@@ -10,7 +10,44 @@
     <title>Aayan | Responsive eCommerce Template</title>
 </head>
 <body>
+    <!-- HEADER -->
+    <header class="header">
+        <nav class="nav bd-grid">
+            <div>
+                <a href="#" class="nav__logo">aayan</a>
+            </div>
+
+            <div class="nav__menu" id="nav-menu">
+                <ul class="nav__list">
+                    <li class="nav__item"><a class="nav__link active" href="#home">Home</a></li>
+                    <li class="nav__item"><a class="nav__link" href="#featured">Featured</a></li>
+                    <li class="nav__item"><a class="nav__link" href="#new">New</a></li>
+                    <li class="nav__item"><a class="nav__link" href="#subscription">Subscription</a></li>
+                </ul>
+            </div>
+
+            <div>
+                <i class="bx bx-cart nav__cart"></i>
+                <i class="bx bx-menu nav__toggle" id="nav-toggle"></i>
+            </div>
+        </nav>
+    </header>
+
+    <main class="main">
+        <section class="home" id="home">
+            <div class="home__container bd-grid">
+                <div class="home__data">
+                    <h1 class="home__title">NEW <br><span>Arrivals</span></h1>
+                    <a href="#" class="button">go shopping</a>
+                </div>
+                <img src="assets/img/home.png" alt="Home">
+            </div>
+        </section>
+    </main>
     
     <script src="assets/js/main.js"></script>
+    <script>
+        showMenu('nav-toggle', 'nav-menu')
+    </script>
 </body>
 </html>
