@@ -379,3 +379,22 @@ img {
     outline: 1px solid var(--first-color-alt);
     cursor: pointer;
 }
+
+/* SPONSOR SECTION */
+.sponsors__container {
+    grid-template-columns: repeat(2, 1fr);
+    row-gap: 2rem;
+    padding: 1.5rem 0;
+}
+.sponsors__logo {
+    display: flex;
+    justify-content: center;
+}
+.sponsors__logo img {
+    width: 80px;
+    filter: opacity(70%);
+    transition: .3s;
+}
+.sponsors__logo img:hover {
+    filter: none;
+}
