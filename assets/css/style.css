@@ -90,6 +90,7 @@ img {
     color: var(--dark-color);
     margin: var(--mb-4) 0 var(--mb-1);
     text-align: center;
+    text-transform: uppercase;
 }
 
 .section-all {
@@ -344,4 +345,37 @@ img {
     align-items: center;
     background: rgba(229, 89, 71, .2);
     transition: .3s;
+}
+
+/* NEWSLETTER SECTION */
+.newsletter {
+    text-align: center;
+}
+.newsletter__container {
+    margin-bottom: var(--mb-2);
+    font-size: var(--small-font-size);
+    color: var(--dark-color-light);
+}
+
+.newsletter__form {
+    display: grid;
+    grid-template-columns: 1fr .5fr;
+}
+.newsletter__input {
+    outline: 1px solid var(--gray-color);
+    border: none;
+    background-color: var(--gray-color);
+    padding: 0 1rem;
+    transition: 0.3s;
+}
+.newsletter__input:focus {
+    outline: 1px solid #ddd;
+}
+.newsletter__form .button {
+    outline: 1px solid var(--first-color);
+    border: none;
+}
+.newsletter__form .button:hover {
+    outline: 1px solid var(--first-color-alt);
+    cursor: pointer;
 }
